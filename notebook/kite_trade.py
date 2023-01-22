@@ -65,7 +65,7 @@ class KiteApp:
     EXCHANGE_MCX = "MCX"
 
     def __init__(self, enctoken):
-        self.headers = {"Authorization": f"enctoken {enctoken}"}
+        self.headers = { "X-Kite-Version": "3", "Authorization": f"enctoken {enctoken}"}
         self.session = requests.session()
         self.root_url = "https://api.kite.trade"
 #         self.root_url = "https://kite.zerodha.com/oms"
@@ -131,12 +131,9 @@ class KiteApp:
         for k in list(params.keys()):
             if params[k] is None:
                 del params[k]
-        print(params)
-        print(self.headers)
-        print(f"{self.root_url}/orders/{variety}")
-#         order_id = self.session.post(f"{self.root_url}/orders/{variety}",
-#                                      data=params, headers=self.headers).json()["data"]["order_id"]
-#         return order_id
+        order_id = self.session.post(f"{self.root_url}/orders/{variety}",
+                                     data=params, headers=self.headers).json()["data"]["order_id"]
+        return order_id
 
     def modify_order(self, variety, order_id, parent_order_id=None, quantity=None, price=None, order_type=None,
                      trigger_price=None, validity=None, disclosed_quantity=None):

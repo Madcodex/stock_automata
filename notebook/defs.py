@@ -36,7 +36,5 @@ def temp_fun(start_dt,end_dt,tf,ist,kite):
 def temp_fun1(start_dt,end_dt,tf,ist,kite):
     results = pd.DataFrame()
     df = pd.DataFrame(kite.historical_data(ist,start_dt, end_dt,tf))
-    results = results.append(df)
-    
- 
+    results = results.append(df) 
     return results
