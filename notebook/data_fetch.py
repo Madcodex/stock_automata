@@ -6,10 +6,10 @@ import os
 # import ta
 from tqdm import tqdm
 import util_fun as uf
-# import dask.dataframe as dd
+from enctoken import get_kite
+kite = get_kite()
 
-enctoken = "6iJnK4deA4kSW4gLgHon9Ve4agDVmzfmYFen42ExoGuC62JVv6NHNfP2GxCfeHD+lPYJWUecaka5DuwLODeIN6K+UohlvtuxAZBwsrSRrj/5wbvHko0I/w=="
-kite = KiteApp(enctoken=enctoken)
+# import dask.dataframe as dd
 
 # %%
 timerframe_list = [
@@ -35,10 +35,10 @@ nifty_500 = nifty_500.merge(inst_filter, on = 'Symbol')
 inst_dict = dict(zip(nifty_500.Symbol, nifty_500.instrument_token))
 
 start_dt = '2018-01-01'
-end_dt = '2023-02-02'
-time_frame = '5minute'
+end_dt = '2023-02-27'
+time_frame = 'day'
 for symbol, instument in tqdm(inst_dict.items()):
-    if i >= 32:
+    if i :
         print(symbol, instument)
         try:
             df_day = uf.get_data_parllel(kite, instument, time_frame , start_dt,end_dt)

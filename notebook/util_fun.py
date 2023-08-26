@@ -7,8 +7,23 @@ from datetime import timedelta
 import swifter
 import dask.dataframe as dd
 
+import pywhatkit
+import datetime
+import time
+import requests
+
+def alert_msg(stock,price,quantity):
+    now = datetime.datetime.now()
+    print(now.minute)
+    pywhatkit.sendwhatmsg('+918439228490', f'{stock} {price} {quantity}', now.hour,now.minute+1,10,True,2)
 
 
+def telegram_msg(stock):
+    TOKEN = "5955415390:AAEbWmuGO4_ueX5yf0X2d01atBox0_21myM"
+    chat_id = "617487644"
+    message = f"{stock}"
+    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
+    requests.get(url).json()# this sends the message
 
 # def temp_fun(start_dt,end_dt,tf,ist,kite):
     
@@ -74,15 +89,22 @@ def get_day_data(kite, instrument, time_frame, start_date,end_date):
 
 def get_data_parllel(kite, instrument, time_frame, start_date, end_date):
     df_final = pd.DataFrame()
-    df = pd.DataFrame(pd.date_range(start_date,end_date,freq="MS")).rename(columns={0:'start_date'})
-    df['end_date'] = df.shift(-1)
-    df.dropna(inplace=True)
+    temp_sd = pd.to_datetime(start_date).strftime('%Y-%m-01')
+    if (pd.to_datetime(end_date) - pd.to_datetime(start_date)).days > 28:
+        df = pd.DataFrame(pd.date_range(temp_sd ,end_date,freq="MS")).rename(columns={0:'start_date'})
+        df['end_date'] = df.shift(-1)
+        df['end_date'].fillna(pd.to_datetime(end_date), inplace=True)
+    else:
+        df = pd.DataFrame({"start_date": pd.to_datetime(start_date), "end_date": pd.to_datetime(end_date)}, index=[0])
+    
     df['tf'] = time_frame
     df['inst'] = instrument
     df['fetch_data'] = df.swifter.apply(lambda x: pd.DataFrame(kite.historical_data(x['inst'], x['start_date'], x['end_date'], x['tf'])),axis = 1)
     for i in df['fetch_data']:
         df_final = df_final.append(i)
     df_final.rename(columns = {'date': "Date",'close':'Close', 'high':'High', 'low':"Low", 'open': "Open","volume":"Volume"}, inplace = True)
+    df_final= df_final[(pd.to_datetime(df_final['Date'].dt.date) >= pd.to_datetime(start_date)) &  \
+                      (pd.to_datetime(df_final['Date'].dt.date) <= pd.to_datetime(end_date))]
     df_final.set_index('Date', inplace=True)
     return df_final
 

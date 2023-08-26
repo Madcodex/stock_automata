@@ -1,0 +1,145 @@
+Date: 17/1/2023
+Time: 22:2
+Phone Number: +918439228490
+Message: Message 1
+--------------------
+Date: 17/1/2023
+Time: 22:3
+Phone Number: +919368327140
+Message: I LOVE YOU
+--------------------
+Date: 17/1/2023
+Time: 22:13
+Phone Number: +919368327140
+Message: I LOVE YOU
+--------------------
+Date: 17/1/2023
+Time: 22:14
+Phone Number: +919368327140
+Message: I LOVE YOU
+--------------------
+Date: 17/1/2023
+Time: 22:16
+Phone Number: +919368327140
+Message: I LOVE YOU
+--------------------
+Date: 17/1/2023
+Time: 22:19
+Phone Number: +919368327140
+Message: I LOVE YOU
+--------------------
+Date: 17/1/2023
+Time: 22:20
+Phone Number: +919368327140
+Message: I LOVE YOU
+--------------------
+Date: 19/1/2023
+Time: 11:23
+Phone Number: +918439228490
+Message: price below day low 42298.8
+--------------------
+Date: 19/1/2023
+Time: 11:24
+Phone Number: +918439228490
+Message: price below day low 42273.8
+--------------------
+Date: 26/5/2023
+Time: 9:32
+Phone Number: +918439228490
+Message: ABB 10 10
+--------------------
+Date: 26/5/2023
+Time: 9:48
+Phone Number: +918439228490
+Message: ABB 10 10
+--------------------
+Date: 26/5/2023
+Time: 9:49
+Phone Number: +918439228490
+Message: ABB 10 10
+--------------------
+Date: 26/5/2023
+Time: 9:50
+Phone Number: +918439228490
+Message: ABB 10 10
+--------------------
+Date: 26/5/2023
+Time: 9:51
+Phone Number: +918439228490
+Message: ABB 10 10
+--------------------
+Date: 26/5/2023
+Time: 9:53
+Phone Number: +918439228490
+Message: ABB 10 10
+--------------------
+Date: 26/5/2023
+Time: 13:20
+Phone Number: +918439228490
+Message: stock ltp quantity15 ITC 443.0 507.90067774 ADANIGREEN 964.5 233.281493 0 0
+--------------------
+Date: 26/5/2023
+Time: 13:21
+Phone Number: +918439228490
+Message: stock ltp quantity51 RAYMOND 1585.9 141.875276 0 0
+--------------------
+Date: 26/5/2023
+Time: 13:23
+Phone Number: +918439228490
+Message: stock ltp quantity46 ITI 106.3 2116.650988 0 0
+--------------------
+Date: 26/5/2023
+Time: 13:24
+Phone Number: +918439228490
+Message: stock ltp quantity14 GODREJAGRO 425.70 528.54122615 ITC 443.00 507.90067726 TATAMOTORS 517.00 435.20309545 DEEPAKFERT 547.85 410.69635883 TCIEXP 1527.05 147.342916100 PRINCEPIPE 606.40 371.042216 0 0
+--------------------
+Date: 26/5/2023
+Time: 13:25
+Phone Number: +918439228490
+Message: stock ltp quantity74 ADANIGREEN 964.35 233.31777976 GOCOLORS 1095.65 205.357550 0 0
+--------------------
+Date: 26/5/2023
+Time: 13:26
+Phone Number: +918439228490
+Message: stock ltp quantity1 GAEL 245.15 917.80542532 INDIANB 277.95 809.49811153 JUBLPHARMA 359.00 626.740947 0 0
+--------------------
+Date: 26/5/2023
+Time: 13:28
+Phone Number: +918439228490
+Message: stock ltp quantity45 DEEPAKFERT 547.6 410.88385746 ITI 106.3 2116.650988 0 0
+--------------------
+Date: 26/5/2023
+Time: 13:29
+Phone Number: +918439228490
+Message: stock ltp quantity65 CHALET 431.65 521.25564774 ADANIGREEN 963.70 233.475148 0 0
+--------------------
+Date: 26/5/2023
+Time: 13:30
+Phone Number: +918439228490
+Message: stock ltp quantity1 GAEL 245.00 918.36734726 TATAMOTORS 516.90 435.28729045 DEEPAKFERT 547.45 410.996438 0 0
+--------------------
+Date: 26/5/2023
+Time: 13:32
+Phone Number: +918439228490
+Message: stock ltp quantity15 ITC 443.0 507.90067736 CHEMPLASTS 436.5 515.463918 0 0
+--------------------
+Date: 26/5/2023
+Time: 13:33
+Phone Number: +918439228490
+Message: stock ltp quantity94 NIACL 120.1 1873.438801 0 0
+--------------------
+Date: 26/5/2023
+Time: 13:34
+Phone Number: +918439228490
+Message: stock ltp quantity65 CHALET 430.55 522.587388 0 0
+--------------------
+Date: 26/5/2023
+Time: 13:35
+Phone Number: +918439228490
+Message: stock ltp quantity35 MANAPPURAM 110.6 2034.358047 0 0
+--------------------
+Date: 26/5/2023
+Time: 13:36
+Phone Number: +918439228490
+Message: stock ltp quantity1 GAEL 245.15 917.80542516 GRAPHITE 327.70 686.60360145 DEEPAKFERT 547.55 410.921377 0 0
+--------------------
