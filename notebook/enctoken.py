@@ -2,6 +2,6 @@ from kite_trade import *
 
 
 def get_kite():
-    enctoken = "Dn2G5L1rxu05kpYF0S2A4dkospF+NVa8kVpbHBwR9/ds0JLvlw8z9G/oU8O0PHc62aYW+4E5CzRvtLFwegZ1bhf1XUOu/R9BBaEhmuZm7feUt2UQrSmweA=="
+    enctoken = "ajVhMcU6Ml6ccfgT1bfUnr/THN8Pt+GJHqJB0IjviUi0sJ9Jc96Y1FkmvaEFFwqTGINOp6CFlCaimqXH9CL7V8+OhBNvVNB/teMRnWp8UQkHwArnVB7uyQ=="
     kite = KiteApp(enctoken=enctoken)
     return kite

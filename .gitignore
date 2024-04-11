@@ -1,2 +1,8 @@
 *.parquet
 *.html
+
+*.xlsx
+*.csv
+*.whl
+*.exe
+*.db
