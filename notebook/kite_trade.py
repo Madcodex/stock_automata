@@ -67,12 +67,12 @@ class KiteApp:
     def __init__(self, enctoken):
         self.headers = { "X-Kite-Version": "3", "Authorization": f"enctoken {enctoken}"}
         self.session = requests.session()
-        self.root_url = "https://api.kite.trade"
-#         self.root_url = "https://kite.zerodha.com/oms"
+        # self.root_url = "https://api.kite.trade"
+        self.root_url = "https://kite.zerodha.com/oms"
         self.session.get(self.root_url, headers=self.headers)
 
     def instruments(self, exchange=None):
-        data = self.session.get(f"{self.root_url}/instruments",headers=self.headers).text.split("\n")
+        data = self.session.get(f"{'https://api.kite.trade'}/instruments",headers=self.headers).text.split("\n")
         Exchange = []
         for i in data[1:-1]:
             row = i.split(",")
@@ -116,8 +116,8 @@ class KiteApp:
         return margins
 
     def orders(self):
-        orders = self.session.get(f"{self.root_url}/orders", headers=self.headers).json()["data"]
-        return orders
+        orders = self.session.get(f"{self.root_url}/orders", headers=self.headers).json()#["data"]
+        return orders, f"{self.root_url}/orders",self.headers
 
     def positions(self):
         positions = self.session.get(f"{self.root_url}/portfolio/positions", headers=self.headers).json()["data"]

@@ -1,0 +1,40 @@
+{
+    "strike_price": {
+      "ce": 22200,
+      "pe": 22150
+    },
+    "support": {
+      "ce": 108,
+      "pe": 141
+    },
+    "resistance": {
+      "ce": 116,
+      "pe": 154
+    },
+    "position": {
+      "call": 0,
+      "put": 0,
+      "call_breakout": 0,
+      "put_breakout": 0
+    },
+    "side": {
+      "call": true,
+      "put": false
+    },
+    "breakout": false,
+    "range": {
+      "ce": 0.01,
+      "pe": 0.01
+    },
+    "stop_loss": {
+      "ce": 0.035,
+      "pe": 0.035,
+      "breakout": 0.10
+    },
+    "breakout_target": 0.5,
+    "sl_hit":{
+        "ce":0,
+        "pe":0
+    }
+  }
+  
