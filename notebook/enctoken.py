@@ -3,7 +3,7 @@ from espressoApi.espressoConnect import EspressoConnect
 import json 
 
 def get_kite():
-    enctoken = "m0MCz6UDDZ9fyeKsLa/xKTXFIrOd/Ywp714ZsH5xuT9OKNJzV0lDYindMx+bAV8cIj3Jj9+mtEHy8vLPPBwABqUNj6ElasUp8R6zWx9zygKSlrDvTDVZhA=="
+    enctoken = "2OjYXKptPRtzsjDvJljNW6cb1hEWPgNvpQReEaTHjMSbn2ctp9+TdG1mXkiUFjgC8opRoE7h73I+pXjOxPzQiqdZtQ6egSmcXlnMMRuM9z1nxNLyRJd9eA=="
     kite = KiteApp(enctoken=enctoken)
     return kite
 
